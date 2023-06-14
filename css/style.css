@@ -1,11 +1,75 @@
 /********** Template CSS **********/
 :root {
-    --primary: #355EFC;
+    --primary: #A49C41;
     --secondary: #E93C05;
     --tertiary: #555555;
-    --light: #DFE4FD;
+    --light: #F5DFB8;
     --dark: #011A41;
 }
+
+.text-primary {
+    color: #A49C41 !important;
+}
+.bg-text {
+   background-color: #A49C41 !important;
+}
+
+
+.btn-primary {
+    background-color: var(--dark) !important;
+    border-color: var(--dark) !important;
+
+}
+
+.bg-primary {
+    background-color: var(--dark) !important;
+}
+
+.border,
+.project-title {
+    border-color: #A49C41 !important;
+
+}
+
+.slick-bg-1 {
+    background-color: #1a1708;
+}
+
+.slick-bg-2 {
+    background-color: #4d4d03;
+}
+
+.slick-bg-3 {
+    background-color: #0d9b88;
+}
+
+.slick-bg-4 {
+    background-color: #8d6907;
+}
+
+.slick-bg-5 {
+    background-color: #5e4f35;
+}
+
+.slick-bg-6 {
+    background-color: #6e804d;
+}
+
+.slick-bg-7 {
+    background-color: #0a77aa;
+}
+
+.slick-bg-8 {
+    background-color: #273d46;
+}
+
+.caro-series-color .project-item{
+    height: 350px !important;
+}
+.about-caro-series-color .project-item{
+    height: 250px !important;
+}
+
 
 .back-to-top {
     position: fixed;
@@ -13,6 +77,18 @@
     right: 30px;
     bottom: 30px;
     z-index: 99;
+}
+
+@media(max-width:991px) {
+    .bg {
+        background: #A49C41 !important;
+        opacity: 0.7;
+        margin-top: 4rem !important;
+        padding: 1rem 1.5rem !important;
+        transition: all 0.5s ease-in-out;
+        border-radius: 10px;
+    }
+
 }
 
 h1,
@@ -91,6 +167,11 @@ h6,
     font-weight: normal;
 }
 
+.fw-semi-bold {
+    border-color: var(--dark) !important;
+    color: var(--primary) !important;
+
+}
 
 /*** Navbar ***/
 .fixed-top {
@@ -194,7 +275,7 @@ h6,
         position: relative;
         min-height: 450px;
     }
-    
+
     #header-carousel .carousel-item img {
         position: absolute;
         width: 100%;
@@ -204,15 +285,24 @@ h6,
 }
 
 .page-header {
+    background-color: #F5DFB8 !important;
     padding-top: 12rem;
     padding-bottom: 6rem;
-    background: url(../img/header.jpg) top left no-repeat;
-    background-size: cover;
+    background: url(../img/tj-pic-removebg-preview.png) top right no-repeat;
+    object-fit: cover;
+    width: 100% !important;
+    height: auto !important;
 }
 
 .page-header .breadcrumb-item,
 .page-header .breadcrumb-item a {
     font-weight: 500;
+}
+
+.header-pic {
+    width: 100% !important;
+    justify-content: flex-end;
+    background-size: contain;
 }
 
 .page-header .breadcrumb-item+.breadcrumb-item::before {
@@ -222,7 +312,12 @@ h6,
 
 /*** Facts ***/
 .facts {
-    background: linear-gradient(rgba(53, 94, 252, .95), rgba(53, 94, 252, .95)), url(../img/bg.png);
+    background: url(../img/academic-2.jpg), linear-gradient(#F5DFB8, var(--dark));
+    background-blend-mode: soft-light !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    width: 100% !important;
+    background-size: cover;
 }
 
 
@@ -238,7 +333,8 @@ h6,
     height: 50%;
     top: 0;
     left: 0;
-    background: linear-gradient(rgba(53, 94, 252, .95), rgba(53, 94, 252, .95)), url(../img/bg.png);
+    background: url(../img/academic-1.jpg), linear-gradient(#F5DFB8, var(--dark));
+    background-blend-mode: soft-light !important;
     z-index: -1;
 }
 
@@ -360,9 +456,12 @@ h6,
 
 
 /*** Team ***/
+.team-item .ht{
+    height: 250px !important;
+}
 .team-item {
     position: relative;
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 
 .team-item img {
