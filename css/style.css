@@ -6,6 +6,14 @@
     --light: #F5DFB8;
     --dark: #011A41;
 }
+.footer p, a{
+    font-size: 15px !important;
+}
+.copyright .container .row div{
+    font-size: 13px !important;
+
+}
+
 .list-m ul li{
     margin-bottom: 2rem;
     font-weight: var(--light);
